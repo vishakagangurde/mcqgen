@@ -1,0 +1,10 @@
+ in particular, have been firmly established as state of the art approaches in sequence modeling and
+ transduction problems such as language modeling and machine translation [31, 2, 5]. Numerous
+ efforts have since continued to push the boundaries of recurrent language models and encoder-decoder
+ architectures [34, 22, 14].
+ Recurrent models typically factor computation along the symbol positions of the input and output
+ sequences. Aligning the positions to steps in computation time, they generate a sequence of hidden
+ states ht, as a function of the previous hidden state ht 1 and the input for position t. This inherently
+ sequential nature precludes parallelization within training examples, which becomes critical at longer
+ sequence lengths, as memory constraints limit batching across examples. Recent work has achieved
+ significant improvements in computational efficiency through factorization tricks [19] and conditiona
